@@ -2,6 +2,6 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 images:
 - name: ghcr.io/andes-noh/nest-http-app
-  newTag: ded92bb9
+  newTag: 45479add
 resources:
 - ../../base
