@@ -21,11 +21,15 @@ spec:
         app.kubernetes.io/part-of: httpServer
     spec:
       containers:
-        - image: ghcr.io/andes-noh/nest-http-app:9e830286
+        - envFrom:
+            - secretRef:
+                name: nest-http-server
+          image: ghcr.io/andes-noh/nest-http-app:7f3d1551
           name: app
           ports:
-            - containerPort: 3000
+            - containerPort: 9000
           resources:
             limits:
               cpu: "0.2"
               memory: 128M
+
