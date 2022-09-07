@@ -8,6 +8,7 @@ metadata:
   name: nest-http-server
   namespace: nest-http
 spec:
+  revisionHistoryLimit: 0
   replicas: 1
   selector:
     matchLabels:
