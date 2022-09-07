@@ -8,6 +8,7 @@ metadata:
   name: nest-http-server
   namespace: nest-http
 spec:
+  replicas: 1
   selector:
     matchLabels:
       app.kubernetes.io/component: back
