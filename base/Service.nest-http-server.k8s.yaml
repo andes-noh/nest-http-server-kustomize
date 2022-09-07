@@ -10,8 +10,8 @@ metadata:
 spec:
   ports:
     - nodePort: 32755
-      port: 3000
-      targetPort: 3000
+      port: 9000
+      targetPort: 9000
   selector:
     app.kubernetes.io/component: back
     app.kubernetes.io/name: nest-http-server
